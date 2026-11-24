@@ -1,0 +1,114 @@
+
+h1, p {
+    margin: 0;              /* delete default margins */
+}
+cursor {
+    cursor: pointer;        /* DONT FORGET TO CHANGE THIS */
+}
+
+#name {
+    font-size: 50px;
+    font-family: 'Geist Pixel', sans-serif;
+    margin-bottom: 10px;
+    color: #F26DB6;
+    text-align: center;
+}
+#description {
+    font-size: 15px;
+    color: #960D58;
+    text-align: center;
+    FONT-FAMILY: 'Geist Pixel', sans-serif;
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.box1 {
+  width: 65%;          
+  height:66%;   
+  --c: #960D58;       /* contour color */
+  --back: #F26DB6;    /* bg color */
+     
+  background:
+    linear-gradient(var(--c), var(--c)) top left / 4px 4px no-repeat, /* top left corner */
+    linear-gradient(var(--c), var(--c)) top right / 4px 4px no-repeat, /* top right corner */
+    linear-gradient(var(--c), var(--c)) bottom left / 4px 4px no-repeat, /* bottom left corner */
+    linear-gradient(var(--c), var(--c)) bottom right / 4px 4px no-repeat, /* bottom right corner */
+    var(--back);
+    
+  box-shadow:
+    0 -8px 0 -4px var(--c),
+    0  8px 0 -4px var(--c),
+   -8px 0 0 -4px var(--c),
+    8px 0 0 -4px var(--c); /* add the pixel border effect on the right corner */
+    position: absolute;
+    top: 23%;
+    left: 18%;
+    filter: drop-shadow(6px 6px 0 rgba(90, 42, 58, 0.25)); /* add a shadow effect */
+}
+.box2 {
+  width: 63%;          
+  height: 52%;
+  --c: #960D58;       /* contour color */
+  --back: #F7E4EE;    /* bg color */
+     
+  background:
+    linear-gradient(var(--c), var(--c)) top left / 4px 4px no-repeat,
+    linear-gradient(var(--c), var(--c)) top right / 4px 4px no-repeat,
+    linear-gradient(var(--c), var(--c)) bottom left / 4px 4px no-repeat,
+    linear-gradient(var(--c), var(--c)) bottom right / 4px 4px no-repeat,
+    var(--back);
+    
+  box-shadow:
+    0 -8px 0 -4px var(--c),
+    0  8px 0 -4px var(--c),
+   -8px 0 0 -4px var(--c),
+    8px 0 0 -4px var(--c);
+    position: absolute;
+    top: 35%;
+    left: 19%;
+}
+#progress {
+    position : relative;
+    margin-top: 50px;
+    z-index: 1;
+    font-size: 25px;
+    color: #960D58;
+    text-align: center;
+    FONT-FAMILY: 'Geist Pixel', sans-serif;
+}
+#question {
+    position : relative;
+    margin-top: 55px;
+    z-index: 1;
+    font-size: 30px;
+    color: #960D58;
+    text-align: center;
+    FONT-FAMILY: 'Geist Pixel', sans-serif;
+}
+
+
+.restart {
+    position : absolute;
+    top: 93%;
+    LEFT : 46%;
+    z-index: 1;
+    font-size: 25px;
+    color: #960D58;
+    background-color: #F26DB6;
+    border: 2px solid #F7E4EE;
+    text-align: center;
+    FONT-FAMILY: 'Geist Pixel', sans-serif;
+}
+.correct {
+    background-color: #4CAF50;
+}
+
+.false {
+    background-color: #f44336;
+}
